@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<%- include('../partials/head',{
+	title : 'Editar artículo | Ar3Dex'
+}) %>
+
+
+<body>
+    <%- include('../partials/header-admin') %>
+    <main class="container dashboard__main">
+        <section class="row my-5" >
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card border-dark dashboard__main--card">
+                    <div class="card-header d-flex justify-content-between">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/admin" class="text-primary">Admin</a></li>
+                            <li class="breadcrumb-item active text-secondary" aria-current="page">Editando <%= name %></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="card-body">
+                        <form class="row dashboard__main__form--product-edit" action="/productos/actualizar/<%= id %>?_method=PUT" method="POST" enctype="multipart/form-data" id="form-edit">
+                            <h3 class="dashboard__main__card--custom-text">Editar Producto</h3>
+                            <hr>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input name="name" type="text" data-identificador="Nombre" class="form-control bg-dark-subtle <%= (locals.errors &&  errors.name) && 'is-invalid' %>" id="name" value="<%= locals.old ? old.name : name %>" >
+                                    <label for="name" class="body-dark-subtle">Nombre</label>
+                                </div>
+                                <p id="info-name" style="color:green"></p>
+                                <p id="error-name" style="color:red"></p> 
+                                <small class="text-danger ms-2"><%= (locals.errors &&  errors.name) && errors.name.msg %></small>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3">
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <input name="price" type="number" data-identificador="Precio" class="form-control bg-dark-subtle <%= (locals.errors &&  errors.price) && 'is-invalid' %>" id="price" value="<%= locals.old ? old.price : price %>">
+                                        <label for="price" >Precio</label>
+                                    </div>
+                                    <span class="input-group-text">USD$</span>
+                                </div>
+                                <p id="info-price" style="color:green"></p>
+                                <p id="error-price" style="color:red"></p> 
+                                <small class="text-danger ms-2"><%= (locals.errors &&  errors.price) && errors.price.msg %></small>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3">
+                                <div class="input-group">
+                                    <div class="form-floating">
+                                        <input name="discount" type="number" data-identificador="Descuento" class="form-control bg-dark-subtle <%= (locals.errors &&  errors.discount) && 'is-invalid' %>" id="discount" value="<%= locals.old ? old.discount : discount %>">
+                                        <label for="discount">Descuento</label>
+                                    </div>
+                                    <span class="input-group-text">%Off</span>
+                                </div>
+                                <p id="info-discount" style="color:green"></p>
+                                <p id="error-discount" style="color:red"></p> 
+                                <small class="text-danger ms-2"><%= (locals.errors &&  errors.discount) && errors.discount.msg %></small>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <select data-identificador="Categoria" name="categoryId" class="form-select <%= (locals.errors && errors.categoryId)  && 'is-invalid'%>" id="categoryId" aria-label="Floating label select example">
+                                        <option value="" selected hidden></option>
+                                        <% categories.forEach(category => { %>
+                                        <option value="<%= category.id %>" <%= categoryId == category.id && 'selected'  %>><%= category.name %></option>
+                                        <% }) %>
+                                    </select>
+                                    <label for="category">Categoría</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-check text-light">
+                                    <input class="form-check-input" value="1" type="radio" name="offer" id="offer" <% if (offer) { %>
+                                    checked
+                                    <% } %> >
+                                    <label class="form-check-label" for="offer">
+                                    En Oferta
+                                    </label>
+                                </div>
+                                <div class="form-check text-light">
+                                    <input class="form-check-input" value="0" type="radio" name="offer" id="offer"<% if (!offer) { %>
+                                        checked
+                                    <% } %> >
+                                    <label class="form-check-label" for="offer">
+                                    Sin Oferta
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3 mb-3">
+                                <input name="mainImage" type="file" data-identificador="Imagen principal" class="form-control" id="mainImage" hidden>
+                                <label class="btn btn-lg btn-outline-light w-100 <%= locals.errors &&  errors.mainImage ? 'btn-outline-danger' : 'btn-outline-light' %>" for="mainImage">Imagen principal</label>
+                                <small class="text-danger"><%= (locals.errors &&  errors.mainImage) && errors.mainImage.msg %></small>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3">
+                                <input  name="images" type="file" data-identificador="Imagenes" class="form-control" id="images" hidden multiple>
+                                <label class="btn btn-lg btn-outline-light w-100" for="images">Imágenes</label>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="form-floating">
+                                    <textarea name="description" data-identificador="Descripción" class="form-control bg-dark-subtle <%= (locals.errors &&  errors.description) && 'is-invalid' %>" id="description" style="height: 200px;"><%= locals.old ? old.description : description %></textarea>
+                                    <label for="description">Modifica la descripción</label>
+                                </div>
+                                <small class="text-danger ms-2"><%= (locals.errors && errors.description) && errors.description.msg %></small>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn btn-lg btn-dark btn-outline-light " type="submit">Modificar producto</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/javascripts/editValidator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <%- include('../partials/scripts') %>
+
+</body>
+</html>

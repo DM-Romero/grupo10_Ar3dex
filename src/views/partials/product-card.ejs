@@ -1,0 +1,12 @@
+<article class="swiper-slide index__main__section__article--carousel">
+    <a href="/productos/detalle/<%= id %>">
+      <img class="index__main__section__article--carousel--product-img" src="/images/products/<%= mainImage || 'default-image.webp' %>">
+      <img class="index__main__section__article--carousel--box-img" src="/images/Article-Frame.png" />
+      <% if (discount) { %>
+        <h3 class="position-absolute top-0 start-0 translate-middle bg-danger bg-gradient rounded-1"><%= discount %>% Off</h3>
+      <% } %>
+      <div class="index__main__section__article--carousel--box-text">
+        <h4 class="index__main__section__article--carousel--name"><%= name %></h4>
+        <h4 class="index__main__section__article--carousel--price"><%= price %>USD$</h4>
+    </div></a>
+  </article>

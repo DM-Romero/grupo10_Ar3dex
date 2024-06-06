@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head',{
+  title:"Registro"
+}) %>
+<body>
+    <%- include('../partials/header') %>
+
+
+    <main class="register__main">
+    <section class="box__card">
+        <div class="box__card--title">
+            <h3 class="fw-semibold">Creá tu cuenta</h3>
+        </div>
+        <div class="col-12" id="msg-error" hidden>
+            <div class="alert alert-danger mb-0">
+              <i class="fa-solid fa-triangle-exclamation fa-xl"></i>  Todos los campos son obligatorios  
+            </div>
+        </div>
+        <form action="/usuarios/crearUsuario" method="POST" class="form form-user" enctype="multipart/form-data" id="form-register">
+            <div class="form__box">
+                <label class="form__label " for="name">Nombre</label>
+                <input class="form__input" id="name" type="text" placeholder="Escribí tu nombre" name="name" value="<%= locals.old && old.name %>">
+                <small class="text-danger" id="error-name"><%= (locals.errors &&  errors.name) ? errors.name.msg : " Campo invalido " %></small>
+            </div>
+            <div class="form__box">
+                <label class="form__label" for="surname">Apellido</label>
+                <input class="form__input" id="surname" type="text" placeholder="Escribí tu apellido" name="surname" value="<%= locals.old && old.surname %>">
+                <small class="text-danger" id="error-surname"><%= (locals.errors &&  errors.surname) ? errors.surname.msg : " Campo invalido " %></small>
+            </div>
+            <div class="form__box">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" id="email" type="email" placeholder="Correo@correo.com" name="email" value="<%= locals.old && old.email %>">
+                <small class="text-danger" id="error-email"><%= (locals.errors &&  errors.email) ? errors.email.msg : " Campo invalido " %></small>
+            </div>
+           
+            <div class="form__box form__box--position">
+                <label class="form__label" for="password">Contraseña<span id="password-badge" class="badge ps-1" tabindex="2" 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-content="La contraseña debe tener: de 8 a 16 carácteres, al menos una mayúscula, una minúscula y un carácter numérico."><i class="fa-solid fa-circle-info exclamation-popover"></i></span>
+                </label>
+                <input class="form__input" id="password" type="password" placeholder="Tu contraseña" name="password">
+                <span class="button-eye" id="button-eye" hidden><i class="fa-solid fa-eye"></i></span>
+                <small
+                 class="text-danger" id="error-password" ><%= (locals.errors &&  errors.password) ? errors.password.msg : " Campo invalido " %>
+                </small>
+            </div>
+            <div class="form__box form__box--position">
+                <label class="form__label" for="passwordConfirm">Confirma tu contraseña</label>
+                <input class="form__input" id="passwordConfirm" type="password" placeholder="Confirma tu contraseña" name="passwordConfirm">
+                <span class="button-eye" id="button-eye-confirm" hidden><i class="fa-solid fa-eye"></i></span>
+                <small class="text-danger" id="error-passwordConfirm"><%= (locals.errors &&  errors.passwordConfirm) ? errors.passwordConfirm.msg : " Campo invalido " %></small>
+            </div>
+            <div>
+                <div class="form-check text-center">
+                    <input class="form-check-input" type="checkbox" value="1" name="remember" id="remember">
+                    <label class="form-check-label ms-0" for="remember">
+                    Acepto <a href="" class="link-primary" data-bs-toggle="modal" data-bs-target="#modalRemember">términos y condiciones.</a>
+                    </label>
+                    <small class="text-danger" id="error-remember"><%= (locals.errors &&  errors.remember) ? errors.remember.msg : " Campo invalido " %></small>
+                </div>
+            </div>
+            
+            <div class="redes-sociales"><p">O registrate tambíen con</p>
+                <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook" ></i></a>
+                <a href="https://www.google.com/" target="_blank"
+                ><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" ></i></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram" ></i></a>
+                
+            </div>
+            <div class="box__end">
+                <button class="button button__segundo" type="reset">Borrar</button>
+                <button class="button button__primary" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    </main>
+    <div class="form__box__2">
+        <p>¿Ya estás registrado? <a class="link" href="/usuarios/ingreso">Ingresá</a></p>
+    </div>
+    <%- include('../partials/modal-show-remember') %>
+    
+
+    <%- include('../partials/footer') %>
+    <%- include('../partials/scripts') %>
+
+    <script src="/javascripts/registerValidator.js"></script>
+</body>
+</html>

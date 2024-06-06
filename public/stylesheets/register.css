@@ -1,0 +1,30 @@
+
+.box__card--title {/*Titulo*/
+    text-align: center;
+    color: var(--colorAzul);
+    text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.675);
+}
+
+.link {/*Restablecer contraseña e Ingrese*/
+    color:#24c7c7;
+}
+
+.redes-sociales{
+    margin-top: 7px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.redes-sociales i{
+    
+    color: var(--colorAzul);
+}
+
+.redes-sociales p{
+    margin: unset;
+}
+
+hr{
+    margin:unset;
+}

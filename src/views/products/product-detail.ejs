@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head',{
+  title:"Detalle"
+}) %>
+<body>
+    <%- include('../partials/header') %>
+
+    <main class="detalleProducto__main">
+        <article class="detalleProducto__main__articule">
+            <div class="detalleProducto__main__articule__div__nombre-y-imagen position-relative">
+                <h2><%= name %></h2>
+                <div>
+                    <img id="imagenMain" src="/images/products/<%= mainImage || 'default-image.png' %>" alt="..." >
+                </div>
+            </div>
+            <div class="detalleProducto__main__articule__div__pago">
+                <div class="detalleProducto__main__articule__div__pago__precio">
+                    <% if (offer) { %>
+                        <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price - (price *  discount / 100) %>USD$</h3>
+                        
+                        
+                        <p class="detalleProducto__main__articule__div__pago__precio__precioNormal"><%= price %>USD$</p>
+                        <h3 class=" top-0 end-0 bg-danger bg-gradient rounded-3 text-light fs-2"  style="margin-left: 15px;"><%= discount %>%Off</h3>       
+                        <% }else{ %>
+                            <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price %>USD$</h3>       
+                    <% } %>
+                </div>
+                <hr class="detalleProducto__main__articule__div__precios__lineaSeparadora">
+                <div class="detalleProducto__main__articule__div__precios__cuotas">
+                    <p>Hasta 3 cuotas sin interés de: </p>
+                    <h2><%= Math.round((price - (price *  discount / 100)) / 3) %>USD$</h2>
+                </div>
+                <h4 class="detalleProducto__main__articule__variaciones">VARIACIONES</h4>
+                <div class="detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel">
+                    <% if (images && images.length > 0) { %>
+                        <% images.forEach(image => { %>
+                            <img src="/images/products/<%= image.name || mainImage %>" alt="..." onclick="document.getElementById('imagenMain').src=this.src">
+                        <% }) %>
+                    <% } else { %>
+                        <img src="/images/products/default-image.png" alt="...">
+                    <% } %>
+                </div>
+                
+                <a href="/carrito">
+                <button class="detalleProducto__main__articule__div__precios__btnAgregarCarrito">
+                    AGREGAR AL CARRITO </button>
+                </a>
+                <img src="/images/Formas-de-pago-opciones-scaled.png" alt="formas de pago"
+                    class="detalleProducto__main__articule__div__precios__formasDePago">
+            </div>
+        </article>
+        <article class="detalleProducto__main__articule__caracteristicas">
+            <div class="detalleProducto__main__articule__caracteristicas__div">
+                <h2 class="detalleProducto__main__articule__caracteristicas__div__caracteristicas">CARACTERISTICAS</h2>
+            </div>
+            <div class="detalleProducto__main__articule__caracteristicas__div__detalles">
+                <div >
+                    <img src="/images/products/<%=  mainImage  || 'default-image.png' %>" alt="...">
+                </div>
+                <div class="detalleProducto__main__articule__caracteristicas__div__detalles__material">
+                    <h3>DETALLES</h3>
+                    <P class="detalleProducto__main__articule__caracteristicas__div__detalles__material-description"><%= description %></P>
+                    
+                </div>
+            </div>
+        </article>
+        
+
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

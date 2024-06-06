@@ -1,0 +1,121 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #707070;
+}
+
+.form__box {
+    width: 100%;
+}
+
+.form__box__2 {
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: 90%;
+    padding-bottom: 1px;
+    padding-top: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form__box__p{
+    color: aliceblue;
+    text-align: center;
+    padding:20px;
+}
+
+
+.form__box__pp{
+    color: rgb(10, 28, 43);
+    text-align: center;
+    padding:20px;
+}
+
+
+.form__box--position {
+    position: relative;
+}
+
+.form__box--position .button-eye {
+    position: absolute;
+    right: 10px;
+    bottom:30px;
+    cursor: pointer;
+    color: var(--colorGris);
+    
+}
+
+.form__label {
+    color:var(--colorAzul);
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 5px #9124c7;
+}
+
+.form__input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #c0c0c0;
+    /* margin-top: 10px; */
+    box-shadow: 2px 2px 5px #9124c7;
+}
+
+.boton-guardarCambios{
+    background: linear-gradient(90deg, rgba(47, 7, 67, 0.6) 0%, rgba(98, 2, 248, 0.6) 50%, rgba(0, 161, 255, 0.6) 100%);
+    border-radius: 7px;
+    margin: 10px;
+    box-shadow: 0px 7.27273px 2.90909px rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 5px;
+    color: white;
+}
+
+.form-user label, .form-user small{
+    margin-left: 10px;
+    line-height: 0px;
+}
+
+.form-user small{
+    visibility: hidden;
+    line-height: 1px;
+    transition: 90ms;
+}
+
+.form-user small.form-user-login{
+    visibility:visible;
+}
+
+.exclamation-popover{
+    border-radius: 100%;
+    border-collapse: separate;
+    border:1px solid #b440ee;
+    box-shadow: 1px 1px 3px #b440ee;
+    background-color: rgb(108, 108, 108);
+    font-size: 20px;
+    transition: 90ms;
+}
+.invalidForm{
+    border: 1px solid #7b7b7b;
+    background-color: #ff000006;
+    box-shadow: 2px 2px 5px #e40000;
+    transition: 90ms;
+}
+.invalidForm--label{
+    color: #ff3030;
+    transition: 90ms;
+}
+.info-avise {
+    color: green;
+}
+.info-error{
+    color: #e40000;
+}

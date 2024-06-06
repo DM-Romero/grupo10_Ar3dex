@@ -1,0 +1,14 @@
+    <article class="productDetail__relacionados">
+        <a href="/productos/detalle/<%= id %>" class="position-relative">
+            <img src="/images/products/<%= mainImage || 'default-image.webp' %>" alt="..." >
+            <% if (offer) { %>
+                <h3 class="position-absolute top-0 end-0 bg-danger bg-gradient rounded-1"><%= discount %>%Off</h3>       
+            <% } %>
+            <h4>
+                <%= name %>
+            </h4>
+            <p class="fs-3 bg-dark bg-opacity-50">
+                <%= price %>USD$
+            </p>
+        </a>
+    </article>

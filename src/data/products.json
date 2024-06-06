@@ -1,0 +1,247 @@
+[
+   {
+      "id": 1,
+      "name": "Kurama",
+      "price": 80,
+      "mainImage": "Figura-1.png",
+      "images": [
+         "kurama-1.jpg",
+         "kurama-2.jpg",
+         "kurama-3.PNG"
+      ],
+      "category": "figura",
+      "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Kurama/Kyuubi es el Mito Uzumaki, Kushina Uzumaki, Minato Namikaze, Black Zetsu, Sora, Ginkaku y Kinkaku, Menma Namikaze y el bijuu de Naruto de la serie Naruto Shippuden, capaz de doblar el fuego y el viento. Tamaño Grande: 21.3cm Alto X 14.6cm Ancho X 15.1cm Fondo",
+      "offer": 1,
+      "discount": 15
+   },
+   {
+      "id": 2,
+      "name": "Luffy",
+      "price": 80,
+      "mainImage": "Figura-2.png",
+      "images": [
+         "luffy-1.jpg",
+         "luffy-2.jpg",
+         "luffy-3.PNG"
+      ],
+      "category": "figura",
+      "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Luffy es el protagonista de la serie de anime y manga One Piece. Es un pirata valiente y decidido que sueña con convertirse en el Rey de los Piratas y encontrar el tesoro más grande del mundo, el One Piece. 18cm Alto x 19,5cm Ancho PLA",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 3,
+      "name": "Bulbasaur",
+      "price": 50,
+      "mainImage": "Figura-3.png",
+      "images": [
+         "bulbasaur-1.png",
+         "bulbasaur-2.jpg",
+         "bulbasaur-3.PNG"
+      ],
+      "category": "llavero",
+      "description": "Un Bulbasaur salvaje apareció! Pokémon numero 001 de la Region de Kanto. Pókemon Impreso en resina y base en PLA totalmente pintado a mano Descripción del personaje: Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. Ternurita de 5.7cm Alto x 4cm Ancho PLA",
+      "offer": 1,
+      "discount": 50
+   },
+   {
+      "id": 4,
+      "name": "Vegeta",
+      "price": 50,
+      "mainImage": "Figura-4.png",
+      "images": [
+         "vegeta-1.jpg",
+         "vegeta-2.jpg",
+         "vegeta-3.jpg"
+      ],
+      "category": "figura",
+      "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Vegeta SSJ de Akira Toriyama, un diseño NO exclusivo de Ar3Dex. Tamaño Grande: 30.7cm Alto X 14.5cm Ancho X 13.3cm Fondo ",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 5,
+      "name": "Naruto",
+      "price": 70,
+      "mainImage": "Figura-5.png",
+      "images": [
+         "naruto-1.jpeg",
+         "naruto-2.jpg",
+         "naruto-3.jpeg"
+      ],
+      "category": "figura",
+      "description": "Naruto Uzumaki es el protagonista del manga y anime de Naruto. Es un joven ninja de la Aldea Oculta de la Hoja que tiene el objetivo de convertirse en Hokage, el líder de la aldea y el ninja más fuerte de todos. 25cm Alto x 17cm Ancho PLA",
+      "offer": 1,
+      "discount": 25
+   },
+   {
+      "id": 6,
+      "name": "Zoro",
+      "price": "80",
+      "mainImage": "1712222588634_zoro-removebg-preview.png",
+      "images": [
+         "1712222588634_zoro-removebg-preview.png"
+      ],
+      "category": "figura",
+      "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Luffy es el protagonista de la serie de anime y manga One Piece. Es un pirata valiente y decidido que sueña con convertirse en el Rey de los Piratas y encontrar el tesoro más grande del mundo, el One Piece. 18cm Alto x 19,5cm Ancho PLA",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 7,
+      "name": "Pikachu",
+      "price": "50",
+      "mainImage": "1704223094375_pikachu.png",
+      "images": [
+         "1704223094375_pikachu.png"
+      ],
+      "category": "llavero",
+      "description": "Un Pikachu salvaje apareció! Pokémon numero 001 de la Region de Kanto. Pókemon Impreso en resina y base en PLA totalmente pintado a mano Descripción del personaje: Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. Ternurita de 5.7cm Alto x 4cm Ancho PLA",
+      "offer": 1,
+      "discount": 50
+   },
+   {
+      "id": 8,
+      "name": "Piccolo",
+      "price": "50",
+      "mainImage": "1704223181609_BANPRESTO-PICCOLO_resultado.png",
+      "images": [
+         "1704223181609_BANPRESTO-PICCOLO_resultado.png"
+      ],
+      "category": "figura",
+      "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Vegeta SSJ de Akira Toriyama, un diseño NO exclusivo de Ar3Dex. Tamaño Grande: 30.7cm Alto X 14.5cm Ancho X 13.3cm Fondo",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 9,
+      "name": "Sasuke",
+      "price": "70",
+      "mainImage": "1712222384987_1704224155713_sasuke-removebg-preview.png",
+      "images": [
+         "1704224155713_sasuke.jpg"
+      ],
+      "category": "figura",
+      "description": "Sasuke es el co-protagonista del manga y anime de Naruto. Es un joven ninja de la Aldea Oculta de la Hoja que tiene el objetivo de convertirse en Hokage, el líder de la aldea y el ninja más fuerte de todos. 25cm Alto x 17cm Ancho PLA",
+      "offer": 1,
+      "discount": 25
+   },
+   {
+      "id": 10,
+      "name": "NIKE",
+      "price": "2",
+      "mainImage": "1704224101754_jordan.png",
+      "images": [
+         "1704224101754_jordan.jpeg"
+      ],
+      "category": "llavero",
+      "description": "LLAVERITO",
+      "offer": 1,
+      "discount": 20
+   },
+   {
+      "id": 11,
+      "name": "Power ranger",
+      "price": "5",
+      "mainImage": "1704224049776_power mate.PNG",
+      "images": [
+         "1704224049775_power mate.PNG"
+      ],
+      "category": "mate",
+      "description": "Mate grande",
+      "offer": 0,
+      "discount": 0
+   },
+   {
+      "id": 12,
+      "name": "Perro salchicha",
+      "price": "6",
+      "mainImage": "1704223918976_perro salchicha.png",
+      "images": [
+         "1704223918976_perro salchicha.jpg"
+      ],
+      "category": "figura",
+      "description": "adorno, juguete",
+      "offer": 0,
+      "discount": 0
+   },
+   {
+      "id": 13,
+      "name": "Rambo",
+      "price": "15",
+      "mainImage": "rambo-removebg-preview.png",
+      "images": [
+         "1704223639177_rambo.jpeg"
+      ],
+      "category": "figura",
+      "description": "figura Rambo estilo retro",
+      "offer": 0,
+      "discount": 0
+   },
+   {
+      "id": 14,
+      "name": "Yuyu Hakusho",
+      "price": "10",
+      "mainImage": "1712222359279_1709563933355_yuyu2-removebg-preview.png",
+      "images": [
+         "1712222359279_1709563933355_yuyu2-removebg-preview.png"
+      ],
+      "category": "figura",
+      "description": "Estatuilla",
+      "offer": 0,
+      "discount": 0
+   },
+   {
+      "id": 15,
+      "name": "Demonio",
+      "price": 80,
+      "mainImage": "1712224692240_mascara_demonio-removebg-preview.png",
+      "images": [
+         "1712224959154_mascaraPerfil.png"
+      ],
+      "category": "mascara",
+      "description": "Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda.",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 16,
+      "name": "Picador galletita 'Sonrisas'",
+      "price": "15",
+      "mainImage": "1712224303441_1709570877902_sonrisas-removebg-preview.png",
+      "images": [
+         "1712224303441_galle.jpg"
+      ],
+      "category": "picador",
+      "description": "Picador similar a galletitas Sonrisas",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 17,
+      "name": "Picador Gatito",
+      "price": "20",
+      "mainImage": "1712223800699_1709570627826_picagatito3-removebg-preview.png",
+      "images": [
+         "1712223800702_1709570627826_picagatito3.png"
+      ],
+      "category": "picador",
+      "description": "Picador de gatito tipo Cogonauts",
+      "offer": 1,
+      "discount": 10
+   },
+   {
+      "id": 18,
+      "name": "Casco Storm Trooper",
+      "price": "220",
+      "mainImage": "1712226493628_cascoStormTrooper-removebg-preview.png",
+      "images": [
+         "1712226493634_stormTrooperPerfil.png",
+         "1712226493642_cascoStormTrooper.png"
+      ],
+      "category": "mascara",
+      "description": "Casco de Storm Trooper muerto, en tamaño real y pintado a mano ",
+      "offer": 0,
+      "discount": 0
+   }
+]
